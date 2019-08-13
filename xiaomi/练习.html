@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        img{
+            width: 400px;
+            height: 200px;
+        }
+        ul{
+            width: 1200px;
+            display: flex;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: move 10s infinite;
+        }
+        div{
+            width: 400px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        @keyframes move{
+            0%,27%{
+                left: 0;
+            }
+            54%{
+                left: -400px;
+            }
+            100%{
+                left: -800px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+   <div>
+       <ul>
+           <li>
+                <img src="1.png">
+           </li>
+           <li>
+                <img src="2.png" alt="">
+           </li>
+           <li> 
+                <img src="3.png" alt="">
+           </li>
+       </ul>
+   </div>
+</body>
+</html>
